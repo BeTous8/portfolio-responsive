@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <h3 class="text-start blockquote fw-bolder font-monospace text-muted text-decoration-underline">{{portfolio[0]["name"]}} Portfolio</h3>
+    <br></br>
+    <table class="table table-striped table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Stock</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Price</th>
+                <th scope="col">Total</th>
+                <th scope="col">Budget</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transaction in portfolio %}
+                <tr>
+                    <td scope="row">{{transaction.stock}}</td>
+                    <td scope="row">{{transaction.Shares}}</td>
+                    <td scope="row">{{transaction.price}}</td>
+                    <td scope="row">{{transaction.total}}</td>
+                    <td scope="row">{{transaction.Cash_Balance}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

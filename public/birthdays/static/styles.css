@@ -1,0 +1,150 @@
+body {
+
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+    position: relative;
+}
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/static/HBD.jpg');
+    background-size: contain; /* Adjust as needed: cover, contain, or specific size */
+    background-position: center;
+
+    opacity: 0.5; /* Adjust the opacity as needed */
+    z-index: -1; /* Ensure it is behind the main content */
+}
+
+
+.container {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    width: 90%;
+
+}
+
+.header {
+    background-image: url('/static/BD.jpg');
+    background-size: 20%;
+    background-color: #CCCCFF;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.section {
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+}
+
+.section:hover {
+    /* background-color: #f5f5f5; */
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+button, input[type="submit"] {
+    background-color: #d9edff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    line-height: 1.8;
+    width: 30%;
+}
+
+input[type="text"]:hover, input[type="number"]:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+table {
+    background-color: transparent;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    z-index: 0;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: #D0CDF9;
+    
+}
+tbody tr:nth-of-type(even) {
+    background-color: #F9F1CD;
+
+}
+
+
+/* Flexbox container for the form */
+.birthday-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Make buttons responsive */
+.birthday-form button, .birthday-form input[type="submit"] {
+    flex: 1 1 auto; /* Adjust width based on available space */
+    min-width: 120px; /* Optional: Ensure buttons don't get too small */
+    padding: 10px; /* Ensure sufficient padding for touch devices */
+
+}
+
+
+/* Button hover and active states */
+.birthday-form button:hover, .birthday-form input[type="submit"]:hover {
+    background-color: #CCCCFF;
+}
+
+.birthday-form button:active, .birthday-form input[type="submit"]:active {
+    background-color: #1F51FF;
+}
+
+
+.img {
+    opacity: 0.5;
+  }
+
+
+
+
+

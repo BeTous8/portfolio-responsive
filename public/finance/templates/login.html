@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <form action="/login" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="password" placeholder="Password" type="password">
+        </div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active mr-3" href="#">Forget password?</a>
+            </li>
+            <li>
+                <button class="btn btn-primary ml-3" type="submit">Log In</button>
+            </li>
+        </ul>
+
+    </form>
+{% endblock %}
