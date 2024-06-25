@@ -1,7 +1,7 @@
 import os
 
 from cs50 import SQL
-from flask import Flask, flash, jsonify, redirect, render_template, request, session
+from flask import Flask, flash, jsonify, redirect, render_template, request, session, url_for
 
 # Configure application
 app = Flask(__name__)
@@ -53,3 +53,6 @@ def index():
         return render_template("index.html", birthdays=rows)
 
 
+if __name__ =="__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
