@@ -3,6 +3,8 @@ import os
 from cs50 import SQL
 from flask import Flask, flash, jsonify, redirect, render_template, request, session, url_for
 
+PASSCODE = "1234"
+
 # Configure application
 app = Flask(__name__)
 
@@ -29,7 +31,13 @@ def index():
         month = request.form.get("month")
         day = request.form.get("day")
         action = request.form.get("action")
+        passcode = request.form.get("passcode")
         print(f"This is {action}")
+
+
+        if action in ["edit", "delete"] and passcode != PASSCODE:
+            print(f"This is {passcode}")
+            return "Incorrect passcode", 403
 
         # TODO: Add the user's entry into the database
         if name and month and day and action=="add":

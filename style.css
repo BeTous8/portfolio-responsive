@@ -1,12 +1,365 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+* { 
+  font-family: Garamond;
+}
+
 :root {
     font-size: 16px;
     font-family: 'Open Sans';
     
 }
 
+
 body {
-    color: black;
-    background-color: white;
+    
+    background-color: rgb(231, 217, 217); */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: 0;
-    padding: 0;
+    padding: 0; */
 }
+
+header {
+    background:url(https://img.freepik.com/free-photo/flat-lay-desktop-with-agenda-magnifying-glass_23-2148397834.jpg?w=1380&t=st=1719901353~exp=1719901953~hmac=802a7294cab36472a0cd7ff3bfbdb301fd4af86555f48b680f8da0f6fd58847e) no-repeat center center;
+  /* background:url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center;  */
+    background-size: cover;
+    height: 850px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+nav {
+  background:url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center;  */
+  height: 20px;
+}
+
+
+nav ul {
+    height: 50px;
+    list-style: none;
+    margin: 0 auto; 
+    padding: 40px;
+    color: aliceblue;
+  }
+
+nav ul li {
+    color: #ad0f0f;
+    display: inline-block; 
+    height: 30px;
+    line-height: 20px; 
+    list-style:armenian;
+    padding: 0px 30px;
+    transition: background .5s;
+    /* margin-left: auto; */
+   
+    
+  }
+
+nav ul li:hover {
+    /* background: #3593be; */
+    /* cursor: pointer; 
+    transition: background .5s;  */
+    /* border-radius: 50%; */
+    
+  }
+
+  a {
+    color: aliceblue;
+    font-size: large;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  table {
+    /* border-collapse: collapse; */
+    border: solid white;
+    border-width: 1px;
+    margin: 25px 0;
+    font-size: 18px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table tr td {
+  border: solid white;
+  border-width: 2px;
+  text-align: left;
+}
+
+.project {
+  color: #541e99;
+}
+
+/* td [href]:hover {
+  background: #3593be;
+  color: rgb(246, 246, 246);
+  transition: 0.5s;
+} */
+
+#header-row {
+  background-color: rgb(144, 255, 255);
+}
+
+
+.table-content {
+  background-color: rgb(237, 244, 151);
+  color: black;
+}
+
+
+.example_d {
+  color: #494949 !important;
+  text-transform: uppercase;
+  background: #ffffff;
+  padding: 20px;
+  border: 4px solid #494949 !important;
+  border-radius: 6px;
+  display:inline-block;
+  transition: all 0.3s ease 0s;
+  }
+  .example_d:hover {
+  color: #20bf6b !important;
+  border-radius: 50px;
+  border-color: #20bf6b !important;
+  transition: all 0.3s ease 0s;
+  }
+
+
+.icon-spacing {
+  margin-right: 8px;
+}
+
+
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+html.contact,
+body.contact {
+  width: 100%;
+  height: 100%;;
+  overflow: auto;
+  margin: 0;
+  display: flex; 
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+div[class*=box] {
+  height: 28%;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-1 { background-color: #fa7c7c; }
+.box-2 { background-color: #705795; }
+.box-3 { background-color: #72c498; }
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  font-size: large;
+}
+
+/* 
+========================
+      BUTTON ONE
+========================
+*/
+.btn-one {
+  color: #FFF;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-one span {
+  transition: all 0.3s;
+  
+}
+.btn-one::before {
+  content: 'bn.tousifar85@gmail.com';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  opacity: 0;
+}
+.btn-one:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-one:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+  cursor:text;
+  
+}
+
+
+/* 
+========================
+      BUTTON TWO
+========================
+*/
+.btn-two {
+  color: #FFF;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-two span {
+  transition: all 0.3s;
+}
+.btn-two::before {
+  content: '(858) 231-1412';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+.btn-two:hover span {
+  opacity: 0;
+}
+.btn-two:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn-two::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-two:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}
+
+
+/* 
+========================
+      BUTTON THREE
+========================
+*/
+.btn-three {
+  color: #FFF;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-three span {
+  transition: all 0.3s;
+}
+.btn-three::before {
+  content: 'https://www.linkedin.com/in/benjamin-tousifar-44054a112/';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+.btn-three:hover span {
+  opacity: 0;
+}
+.btn-three:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+  width:max-content;
+  position: absolute;
+  
+}
+.btn-three::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-three:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+  cursor: text;
+  pointer-events: auto;
+  align-items: center;
+}
+
+
+
+.copy-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+

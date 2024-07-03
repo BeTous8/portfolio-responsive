@@ -18,11 +18,12 @@
                 <!-- TODO: Create a form for users to submit a name, a month, and a day -->
                  <form action="/" method="post" class="birthday-form">
                     <input type="text" name="name" placeholder="Name">
-                    <input type="number" name="month" placeholder="Month">
-                    <input type="number" name="day" placeholder="Day">
+                    <input type="number" name="month" placeholder="Month" min="1" max="12">
+                    <input type="number" name="day" placeholder="Day" min="1" max="31">
+                    <input type="hidden" name="passcode" id="passcode">
                     <button type="submit" name="action" value="add">Add</button>
-                    <button type="submit" name="action" value="edit">Edit</button>
-                    <button type="submit" name="action" value="delete">Delete</button>
+                    <button type="submit" onclick="promptPasscode('edit')">Edit</button>
+                    <button type="submit" onclick="promptPasscode('edit')">Delete</button>
                  </form>
             </div>
 
@@ -54,5 +55,20 @@
                 </table>
             </div>
         </div>
+        <script>
+            function promptPasscode(action) {
+                const passcode = prompt("Please enter the passcode:");
+                if (passcode !== null) {
+                    document.getElementById("passcode").value = passcode;
+                    const form = document.getElementById("birthday-form");
+                    const actionInput = document.createElement("input");
+                    actionInput.setAttribute("type", "hidden");
+                    actionInput.setAttribute("name", "action");
+                    actionInput.setAttribute("value", action);
+                    form.appendChild(actionInput);
+                    form.submit();
+                }
+            }
+        </script>
     </body>
 </html>
