@@ -1,7 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
 * { 
-  font-family: Garamond;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 :root {
@@ -16,7 +16,7 @@ body {
     background-color: rgb(231, 217, 217); */
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow:scroll;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -28,10 +28,13 @@ header {
     background:url(https://img.freepik.com/free-photo/flat-lay-desktop-with-agenda-magnifying-glass_23-2148397834.jpg?w=1380&t=st=1719901353~exp=1719901953~hmac=802a7294cab36472a0cd7ff3bfbdb301fd4af86555f48b680f8da0f6fd58847e) no-repeat center center;
   /* background:url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center;  */
     background-size: cover;
+    background-repeat: repeat;
+    background-size: auto
     height: 850px;
     color: rgb(255, 255, 255);
     text-align: center;
     padding-top: 20px;
+    position: relative;
 }
 
 
@@ -75,6 +78,12 @@ nav ul li:hover {
     font-size: large;
     text-decoration: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+  }
+
+  .project-link {
+    font-family: cursive;
+    text-decoration: underline;
   }
 
   table {
@@ -324,10 +333,12 @@ div[class*=box] {
   opacity: 0;
 }
 .btn-three:hover::before {
+  content: 'https://www.linkedin.com/in/benjamin-tousifar-44054a112/';
   opacity: 1; 
   transform: scale(1, 1); 
   width:max-content;
   position: absolute;
+  cursor: text;
   
 }
 .btn-three::after {
@@ -342,24 +353,60 @@ div[class*=box] {
   background-color: rgba(255,255,255,0.1);
 }
 .btn-three:hover::after {
+  content: 'https://www.linkedin.com/in/benjamin-tousifar-44054a112/';
   opacity: 0; 
   transform: scale(0.1, 1);
-  cursor: text;
   pointer-events: auto;
   align-items: center;
 }
 
 
+p, hr {
+  margin-left: 25%;
+  margin-right: 25%;
+}
 
-.copy-btn {
-  margin-top: 10px;
-  padding: 10px 20px;
-  border: 2px solid #000;
-  background-color: #555;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
+.work-time span {
+  display:inline;
+  margin-right: 18%;
+  margin-left: 18%;
+}
+
+.time {
+  margin-inline-end: auto;
+}
+
+/* .work span {
+  display:inline;
+} */
+
+.education span {
+  display: inline;
+  margin-right: 100px;
+  margin-left: 100px;
+  font-size: large;
+}
+
+.date {
+  margin-left: 40%;
+}
+
+.position {
+  margin-right: 80%;
+}
+
+.jd {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+.summary {
+  text-align: left;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
