@@ -6,20 +6,53 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <link href="../style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     </head>
     <body>
         <nav>
-            <ul>
-                <li><a class="example_d" href="../index.html"><i class="fas fa-home icon-spacing"></i>Home</a></li>
-                <li><a class="example_d" href="./resume.html"><i class="fas fa-file-alt icon-spacing"></i>Resume</a></li>
-                <li><a class="example_d" href="./public/projects.html"><i class="fas fa-project-diagram icon-spacing"></i>Projects</a></li>
-                <li><a class="example_d" href="../index.html"><i class="fas fa-user icon-spacing"></i>About me</a></li>
-                <li><a class="example_d" href="../index.html"><i class="fas fa-envelope icon-spacing"></i>Contact</a></li>
-            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div id="nav-list">
+                <ul>
+                    <li><a class="example_d" href="../index.html"><i class="fas fa-home icon-spacing"></i>Home</a></li>
+                    <li><a class="example_d" href="./resume.html"><i class="fas fa-file-alt icon-spacing"></i>Resume</a></li>
+                    <li><a class="example_d" href="./projects.html"><i class="fas fa-project-diagram icon-spacing"></i>Projects</a></li>
+                    <li><a class="example_d" href="./about_me.html"><i class="fas fa-user icon-spacing"></i>About me</a></li>
+                    <li><a class="example_d" href="./contact.html"><i class="fas fa-envelope icon-spacing"></i>Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        <header>
-            <h1>Project List</h1>
-            <table  class="table-content">
+        <br><br>
+        <h1>Project List</h1>
+        <ul class="project-list">
+            <li>
+              <a href="#">
+                <i class="fa fa-birthday-cake"></i>
+                <span class="tooltip"><strong>Overview:</strong><br>
+                    The Birthday project is a basic web application built using the Flask framework.<br> The primary functionalities of the application include:<br>
+                    
+                    <strong>Adding new birthdays:</strong> Users can add their own birthdays or those of their friends and family.<br>
+                    <b>Viewing upcoming birthdays:</b> The application can display a list of upcoming birthdays.<br>
+                    <b>Editing and deleting birthdays:</b> Users can update or remove existing birthday entries.<br>
+                    <b>Key Components</b><br>
+                    Flask Application: The core of the project, handling routing, templates, and server-side logic.
+                    HTML Templates: For rendering the web pages.
+                    Database: To store birthday data, which can be SQLite for simplicity.
+                    Forms: To allow users to input birthday information.
+                    </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-hand-holding-usd"></i>
+                <span class="tooltip">The finance project is a web application that allows users to manage their financial transactions, track their spending, and monitor their budget. Users can view their account balances, add new transactions, and categorize their expenses to get insights into their financial habits. The application also provides visualizations to help users understand their financial data and make informed decisions.</span>
+              </a>
+              </li>
+            
+          </ul>
+          
+            <!-- <table  class="table-content">
                 <tr id="header-row">
                     <th>name</th>
                     <th>description</th>
@@ -32,8 +65,19 @@
                     <td><a class="project" href="./finance_description.html">finance manager</a></td>
                     <td>The Finance Project is a web app for managing stock portfolios, allowing users to buy, sell, and track stocks with real-time price updates.</td>
                 </tr>
-            </table>
-        </header>
+            </table> -->
+        <!-- <ul class="project-list">
+            <li class="project-items">
+                <a href="#"><i class="fas fa-2x fa-dollar-sign"></i></a>
+                <a href="#"><i class="fas fa-2x fa-birthday-cake"></i></a>
+            </li>
+        </ul> -->
         
+        <script>
+            function toggleMenu() {
+                const navList = document.getElementById("nav-list");
+                navList.classList.toggle("show");
+            }
+        </script>
     </body>
 </html>

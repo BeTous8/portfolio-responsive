@@ -10,14 +10,20 @@
   </head>
   <body class="contact">
     <nav>
-        <ul>
-          <li><a class="example_d" href="../index.html"><i class="fas fa-home icon-spacing"></i>Home</a></li>
-          <li><a class="example_d" href="./resume.html"><i class="fas fa-file-alt icon-spacing"></i>Resume</a></li>
-          <li><a class="example_d" href="./public/projects.html"><i class="fas fa-project-diagram icon-spacing"></i>Projects</a></li>
-          <li><a class="example_d" href="../index.html"><i class="fas fa-user icon-spacing"></i>About me</a></li>
-          <li><a class="example_d" href="./contact.html"><i class="fas fa-envelope icon-spacing"></i>Contact</a></li>
-        </ul>
-    </nav>
+      <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+      </div>
+      <div id="nav-list">
+          <ul>
+              <li><a class="example_d" href="../index.html"><i class="fas fa-home icon-spacing"></i>Home</a></li>
+              <li><a class="example_d" href="../index.html"><i class="fas fa-file-alt icon-spacing"></i>Resume</a></li>
+              <li><a class="example_d" href="./public/projects.html"><i class="fas fa-project-diagram icon-spacing"></i>Projects</a></li>
+              <li><a class="example_d" href="../index.html"><i class="fas fa-user icon-spacing"></i>About me</a></li>
+              <li><a class="example_d" href="../index.html"><i class="fas fa-envelope icon-spacing"></i>Contact</a></li>
+          </ul>
+      </div>
+  </nav>
+  <br><br>
     <!-- Hover #1 -->
     <div class="box-1">
       <div class="btn btn-one">
@@ -39,6 +45,12 @@
         <span>LinkedIn</span>
       </div>
     </div>
+      <script>
+        function toggleMenu() {
+            const navList = document.getElementById("nav-list");
+            navList.classList.toggle("show");
+        }
+    </script>
   </body>
 </html>
 

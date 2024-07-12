@@ -9,106 +9,117 @@
     </head>
     <body>
         <nav>
-            <ul>
-                <li><a class="example_d" href="../index.html"><i class="fas fa-home icon-spacing"></i>Home</a></li>
-                <li><a class="example_d" href="../index.html"><i class="fas fa-file-alt icon-spacing"></i>Resume</a></li>
-                <li><a class="example_d" href="./public/projects.html"><i class="fas fa-project-diagram icon-spacing"></i>Projects</a></li>
-                <li><a class="example_d" href="../index.html"><i class="fas fa-user icon-spacing"></i>About me</a></li>
-                <li><a class="example_d" href="../index.html"><i class="fas fa-envelope icon-spacing"></i>Contact</a></li>
-            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div id="nav-list">
+                <ul>
+                    <li><a class="example_d" href="../index.html"><i class="fas fa-home icon-spacing"></i>Home</a></li>
+                    <li><a class="example_d" href="./resume.html"><i class="fas fa-file-alt icon-spacing"></i>Resume</a></li>
+                    <li><a class="example_d" href="./projects.html"><i class="fas fa-project-diagram icon-spacing"></i>Projects</a></li>
+                    <li><a class="example_d" href="./about_me.html"><i class="fas fa-user icon-spacing"></i>About me</a></li>
+                    <li><a class="example_d" href="./contact.html"><i class="fas fa-envelope icon-spacing"></i>Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        <header>
-            <h1>Benjamin Tousifar</h1>
-            <h4>Milwaukee, WI | (858) 231-1412 | <a href="https://www.linkedin.com/in/benjamin-tousifar-44054a112/" target="_blank">LinkedIn</a></h4>
-            <h3>Professional Summary</h3>
-            <hr>
-            <p class="summary">Versatile and detail-oriented professional with more than 2 years of experience as a Data Engineer, now
-                transitioning to web development. Proficient in Python, Flask, HTML, CSS, and JavaScript. Recently
-                completed Harvard's CS50 course to enhance my programming and web development skills. Seeking to
-                leverage my strong analytical and development abilities in a challenging web development role.
-                </p>
-            <h3>Skills</h3>
-            <hr>
-            <p><b>Web Developement: </b>Python, Flask, SQLite, HTML, CSS (Bootstrap), JavaScript, Git
+        
+        <br><br>
+        <h1>Benjamin Tousifar</h1>
+        <h4>Milwaukee, WI | (858) 231-1412 | <a class="linkedin" href="https://www.linkedin.com/in/benjamin-tousifar-44054a112/" target="_blank">LinkedIn</a></h4>
+        <h3>Professional Summary</h3>
+        <hr>
+        <p class="summary">Versatile and detail-oriented professional with more than 2 years of experience as a Data Engineer, now
+            transitioning to web development. Proficient in Python, Flask, HTML, CSS, and JavaScript. Recently
+            completed Harvard's CS50 course to enhance my programming and web development skills. Seeking to
+            leverage my strong analytical and development abilities in a challenging web development role.
             </p>
-            <p><b>Data Engineering: </b> SQL, PowerCenter, Oracle, Azure Data Factory, HANA, HVR
-            </p>
-            <h3>Work Experience</h3>
-            <hr>
-            <div class="work-time">
-                <span>LTIMindtree</span>
-                <span>Jan 2022 - March 2024</span>
-            </div>
-            <div class="jd">
-                <h4 class="position">Data Engineer</h4>
-                <ul>
-                    <li>Applied PowerCenter filters to investigate and resolve discrepancies in the flow of items from
-                        SAP source tables to salable tables, ensuring seamless data transfer</li><br>
-                    <li>Conducted manual data flow processes, inserting inbound files derived from CDC tables into the
-                        ePIM application derived from Oracle database. Implemented SQL queries with strategic filters,
-                        particularly addressing cases where pricing information was unavailable</li><br>
-                    <li>Managed ad-hoc loading processes, ensuring seamless integration and monitoring of Redwood
-                        inbound files into the Product Information Management (PIM) system for all Strategic Business
-                        Groups (SBGs) within the HANA and HVR model.</li><br>
-                    <li>Performed ETL for different ERP on Dev and QA environment using Azure Data Factory Pulling
-                        data from different sources to hive and ingest it to synapse for further data analysis.</li><br>
-                </ul>
-            </div>
-            <h3>Education</h3>
-            <hr>
-            <div class="education">
-                <span>UC San Diego, Bachelors in Electrical and Computer Engineering. </span>
-                <span>June 2021</span>
-                
-            </div>
-            <br>
-            <h3>Projects</h3>
-            <hr>
-            <div class="jd">
-                <h4 class="position">Finance</h4>
-                <ul>
-                    <li>Technologies: Python, Flask, SQLite, IEX Cloud API, HTML, CSS (Bootstrap), JavaScript</li><br>
-                    <li>Description: Developed a web application for managing stock portfolios using Flask and SQLite.
-                        Implemented features for buying and selling stocks, viewing portfolios, and tracking transaction
-                        history. Integrated with IEX Cloud API to fetch real-time stock prices. Designed a responsive
-                        frontend using Bootstrap.
-                        </li><br>
-                    <li>Features:
-                        <ul>
-                            <li>Secure user authentication with hashed passwords.</li>
-                            <li>Enabled users to buy and sell stocks and view their portfolio.</li>
-                            <li>Integrated real-time stock price retrieval using IEX Cloud API.</li>
-                            <li>Maintained a transaction history for all buy and sell operations.</li>
-                        </ul>
-                        
+        <h3>Skills</h3>
+        <hr>
+        <p><b>Web Developement: </b>Python, Flask, SQLite, HTML, CSS (Bootstrap), JavaScript, Git
+        </p>
+        <p><b>Data Engineering: </b> SQL, PowerCenter, Oracle, Azure Data Factory, HANA, HVR
+        </p>
+        <h3>Work Experience</h3>
+        <hr>
+        <div class="work-time">
+            <span>LTIMindtree</span>
+            <span>Jan 2022 - March 2024</span>
+        </div>
+        <div class="jd">
+            <h4 class="position">Data Engineer</h4>
+            <ul>
+                <li>Applied PowerCenter filters to investigate and resolve discrepancies in the flow of items from
+                    SAP source tables to salable tables, ensuring seamless data transfer</li><br>
+                <li>Conducted manual data flow processes, inserting inbound files derived from CDC tables into the
+                    ePIM application derived from Oracle database. Implemented SQL queries with strategic filters,
+                    particularly addressing cases where pricing information was unavailable</li><br>
+                <li>Managed ad-hoc loading processes, ensuring seamless integration and monitoring of Redwood
+                    inbound files into the Product Information Management (PIM) system for all Strategic Business
+                    Groups (SBGs) within the HANA and HVR model.</li><br>
+                <li>Performed ETL for different ERP on Dev and QA environment using Azure Data Factory Pulling
+                    data from different sources to hive and ingest it to synapse for further data analysis.</li><br>
+            </ul>
+        </div>
+        <h3>Education</h3>
+        <hr>
+        <div class="education">
+            <span>UC San Diego, Bachelors in Electrical and Computer Engineering. </span>
+            <span>June 2021</span>
+            
+        </div>
+        <br>
+        <h3>Projects</h3>
+        <hr>
+        <div class="jd">
+            <h4 class="position">Finance</h4>
+            <ul>
+                <li>Technologies: Python, Flask, SQLite, IEX Cloud API, HTML, CSS (Bootstrap), JavaScript</li><br>
+                <li>Description: Developed a web application for managing stock portfolios using Flask and SQLite.
+                    Implemented features for buying and selling stocks, viewing portfolios, and tracking transaction
+                    history. Integrated with IEX Cloud API to fetch real-time stock prices. Designed a responsive
+                    frontend using Bootstrap.
                     </li><br>
-                    <li>Link to GitHub repo
-                        <ul>
-                            <li><a class="project-link" href=" https://github.com/BeTous8/Portfolio-Project/tree/main/public/finance" target="_blank">click here to see the project</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <h3>Soft Skill</h3>
-            <hr>
-            <p class="summary">A versatile professional with strong soft skills, I excel in effective communication and collaboration,
-                thriving in dynamic environments. As a self-motivated achiever, I bring innovation to problem-solving,
-                leveraging a critical mindset. Meticulous and detail-oriented, I actively listen and engage with a focus on
-                precision
-            </p>
-            <h3>Certification</h3>
-            <hr>
-            <div class="education">
-                <span>Harvard University's Introduction to Computer Science course </span>
-                <span>September 2024</span><br>
-            <h3></h3>
+                <li>Features:
+                    <ul>
+                        <li>Secure user authentication with hashed passwords.</li>
+                        <li>Enabled users to buy and sell stocks and view their portfolio.</li>
+                        <li>Integrated real-time stock price retrieval using IEX Cloud API.</li>
+                        <li>Maintained a transaction history for all buy and sell operations.</li>
+                    </ul>
+                    
+                </li><br>
+                <li>Link to GitHub repo
+                    <ul>
+                        <li><a class="project-link" href=" https://github.com/BeTous8/Portfolio-Project/tree/main/public/finance" target="_blank">click here to see the project</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <h3>Soft Skill</h3>
+        <hr>
+        <p class="summary">A versatile professional with strong soft skills, I excel in effective communication and collaboration,
+            thriving in dynamic environments. As a self-motivated achiever, I bring innovation to problem-solving,
+            leveraging a critical mindset. Meticulous and detail-oriented, I actively listen and engage with a focus on
+            precision
+        </p>
+        <h3>Certification</h3>
+        <hr>
+        <div class="education">
+            <span>Harvard University's Introduction to Computer Science course </span>
+            <span>September 2024</span><br>
+        <h3></h3>
+        
+        <div class="education">
+            <span></span>
+            <span></span><br>
             
-            <div class="education">
-                <span></span>
-                <span></span><br>
             
-            
-        </header>
+        <script>
+            function toggleMenu() {
+                const navList = document.getElementById("nav-list");
+                navList.classList.toggle("show");
+            }
+        </script>
         
     </body>
 </html>
