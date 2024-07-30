@@ -7,27 +7,186 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet" />
     <title>My Website</title>
     
 </head>
 <body>
-    <nav>
-        <div class="hamburger" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
+    <header>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </header>
+    <nav class="mobile-nav">
+        <ul class="menu">
+            <li><a class="example_d" href="#home"><i class="fas fa-home icon-spacing"></i>Home</a></li>
+            <li><a class="example_d" href="#resume"><i class="fas fa-file-alt icon-spacing"></i>Resume</a></li>
+            <li><a class="example_d" href="#projects"><i class="fas fa-project-diagram icon-spacing"></i>Projects</a></li>
+            <li><a class="example_d" href="./public/about_me.html"><i class="fas fa-user icon-spacing"></i>About me</a></li>
+            <li><a class="example_d" href="#contact"><i class="fas fa-envelope icon-spacing"></i>Contact</a></li>
+        </ul> 
+    </nav>
+    <section id="home" class="page">
+        <section class="Introduction">
+            <div class="intro-text">
+                <h1> Hi, I'm Ben</h1>
+                <p>A passionate Software Engineer</p>
+                <a href="./CV-WD.pdf" class="download-cv-btn" download>Download CV</a>
+                <a href="./public/contact.html" class="contact-me-button">Contact Me</a>
+            </div>
+            <div class="intro-image">
+                <img src="https://media.licdn.com/dms/image/C5603AQEacdi328yh2w/profile-displayphoto-shrink_200_200/0/1648791104242?e=1727913600&v=beta&t=o8zmd7nPUGxHubqfhlXg2JwjLyCg9cdGj-J4tqVdmJo">
+            </div>
+        </section>
+    </section>
+    <section id="resume" class="page">
+        <h1>Benjamin Tousifar</h1>
+        <h4>Milwaukee, WI | (858) 231-1412 | <a class="linkedin" href="https://www.linkedin.com/in/benjamin-tousifar-44054a112/" target="_blank">LinkedIn</a></h4>
+        <h3>Professional Summary</h3>
+        <hr>
+        <p class="summary">Versatile and detail-oriented professional with more than 2 years of experience as a Data Engineer, now
+            transitioning to web development. Proficient in Python, Flask, HTML, CSS, and JavaScript. Recently
+            completed Harvard's CS50 course to enhance my programming and web development skills. Seeking to
+            leverage my strong analytical and development abilities in a challenging web development role.
+            </p>
+        <h3>Skills</h3>
+        <hr>
+        <p><b>Web Developement: </b>Python, Flask, SQLite, HTML, CSS (Bootstrap), JavaScript, Git
+        </p>
+        <p><b>Data Engineering: </b> SQL, PowerCenter, Oracle, Azure Data Factory, HANA, HVR
+        </p>
+        <h3>Work Experience</h3>
+        <hr>
+        <div class="work-time">
+            <span>LTIMindtree</span>
+            <span>Jan 2022 - March 2024</span>
         </div>
-        <div id="nav-list">
+        <div class="jd">
+            <h4 class="position">Data Engineer</h4>
             <ul>
-                <li><a class="example_d" href="./index.html"><i class="fas fa-home icon-spacing"></i>Home</a></li>
-                <li><a class="example_d" href="./public/resume.html"><i class="fas fa-file-alt icon-spacing"></i>Resume</a></li>
-                <li><a class="example_d" href="./public/projects.html"><i class="fas fa-project-diagram icon-spacing"></i>Projects</a></li>
-                <li><a class="example_d" href="./public/about_me.html"><i class="fas fa-user icon-spacing"></i>About me</a></li>
-                <li><a class="example_d" href="./public/contact.html"><i class="fas fa-envelope icon-spacing"></i>Contact</a></li>
+                <li>Applied PowerCenter filters to investigate and resolve discrepancies in the flow of items from
+                    SAP source tables to salable tables, ensuring seamless data transfer</li><br>
+                <li>Conducted manual data flow processes, inserting inbound files derived from CDC tables into the
+                    ePIM application derived from Oracle database. Implemented SQL queries with strategic filters,
+                    particularly addressing cases where pricing information was unavailable</li><br>
+                <li>Managed ad-hoc loading processes, ensuring seamless integration and monitoring of Redwood
+                    inbound files into the Product Information Management (PIM) system for all Strategic Business
+                    Groups (SBGs) within the HANA and HVR model.</li><br>
+                <li>Performed ETL for different ERP on Dev and QA environment using Azure Data Factory Pulling
+                    data from different sources to hive and ingest it to synapse for further data analysis.</li><br>
             </ul>
         </div>
-    </nav>
+        <h3>Education</h3>
+        <hr>
+        <div class="education">
+            <span>UC San Diego, Bachelors in Electrical and Computer Engineering. </span>
+            <span>June 2021</span>
+            
+        </div>
+        <br>
+        <h3>Projects</h3>
+        <hr>
+        <div class="jd">
+            <h4 class="position">Finance</h4>
+            <ul>
+                <li>Technologies: Python, Flask, SQLite, IEX Cloud API, HTML, CSS (Bootstrap), JavaScript</li><br>
+                <li>Description: Developed a web application for managing stock portfolios using Flask and SQLite.
+                    Implemented features for buying and selling stocks, viewing portfolios, and tracking transaction
+                    history. Integrated with IEX Cloud API to fetch real-time stock prices. Designed a responsive
+                    frontend using Bootstrap.
+                    </li><br>
+                <li>Features:
+                    <ul>
+                        <li>Secure user authentication with hashed passwords.</li>
+                        <li>Enabled users to buy and sell stocks and view their portfolio.</li>
+                        <li>Integrated real-time stock price retrieval using IEX Cloud API.</li>
+                        <li>Maintained a transaction history for all buy and sell operations.</li>
+                    </ul>
+                    
+                </li><br>
+                <li>Link to GitHub repo
+                    <ul>
+                        <li><a class="project-link" href=" https://github.com/BeTous8/Portfolio-Project/tree/main/public/finance" target="_blank">click here to see the project</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <h3>Soft Skill</h3>
+        <hr>
+        <p class="summary">A versatile professional with strong soft skills, I excel in effective communication and collaboration,
+            thriving in dynamic environments. As a self-motivated achiever, I bring innovation to problem-solving,
+            leveraging a critical mindset. Meticulous and detail-oriented, I actively listen and engage with a focus on
+            precision
+        </p>
+        <h3>Certification</h3>
+        <hr>
+        <div class="education">
+            <span>Harvard University's Introduction to Computer Science course </span>
+            <span>September 2024</span><br>
+        <h3></h3>
+        
+        <div class="education">
+            <span></span>
+            <span></span><br>
+    </section>
+    <section id="projects" class="page">
+        <h1>Project List</h1>
+        <ul class="project-list">
+            <li>
+              <a href="#">
+                <i class="fa fa-birthday-cake"></i>
+                <span class="tooltip"><strong>Overview:</strong><br>
+                    The Birthday project is a basic web application built using the Flask framework.<br> The primary functionalities of the application include:<br>
+                    
+                    <strong>Adding new birthdays:</strong> Users can add their own birthdays or those of their friends and family.<br>
+                    <b>Viewing upcoming birthdays:</b> The application can display a list of upcoming birthdays.<br>
+                    <b>Editing and deleting birthdays:</b> Users can update or remove existing birthday entries.<br>
+                    <b>Key Components</b><br>
+                    Flask Application: The core of the project, handling routing, templates, and server-side logic.
+                    HTML Templates: For rendering the web pages.
+                    Database: To store birthday data, which can be SQLite for simplicity.
+                    Forms: To allow users to input birthday information.
+                    </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-hand-holding-usd"></i>
+                <span class="tooltip">The finance project is a web application that allows users to manage their financial transactions, track their spending, and monitor their budget. Users can view their account balances, add new transactions, and categorize their expenses to get insights into their financial habits. The application also provides visualizations to help users understand their financial data and make informed decisions.</span>
+              </a>
+              </li>
+            
+          </ul>
+    </section>
+    <br><br>
+    <section id="contact" class="page">
+        <div class="box-1">
+            <div class="btn btn-one">
+              <span>Email</span>
+            </div>
+          </div>
+          
+          
+          <!-- Hover #2 -->
+          <div class="box-2">
+            <div class="btn btn-two">
+              <span>Phone</span>
+            </div>
+          </div>
+      
+          <!-- Hover #3 -->
+          <div class="box-3">
+            <div class="btn btn-three">
+                <a id="linkedin-link" class="btn btn-three" href="javascript:void(0)">
+                    <span class="link-text">LinkedIn</span>
+                </a>
+              
+            </div>
+          </div>
+    </section>
     
-    <h2>My Portfolio</h2>
-    <p>I am a web developer</p>
+    <main>
         
         <!-- <div class="justify-end hidden lg:flex pointer-events-auto">
             <button class="inline-block group relative rounded-full uppercase leading-none shadow whitespace-nowrap tracking-[0.19em] font-sans font-semibold overflow-hidden hover:scale-[1.05] duration-300 transition-transform user-select-none bg-yellow text-black" data-test-id="nav-get-started-button">
@@ -49,12 +208,32 @@
             </button>
         </div> -->
     
-        <script>
-            function toggleMenu() {
-                const navList = document.getElementById("nav-list");
-                navList.classList.toggle("show");
-            }
-        </script>
+    </main>
+
+    <script>
+        const menu_btn = document.querySelector('.hamburger');
+	    const mobile_menu = document.querySelector('.mobile-nav');
+
+	    menu_btn.addEventListener('click', function () {
+		menu_btn.classList.toggle('is-active');
+		mobile_menu.classList.toggle('is-active');
+	});
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+        });
+    });
+});
+        document.addEventListener('DOMContentLoaded', function() {
+            const linkedinBtn = document.getElementById('linkedin-link');
+            linkedinBtn.addEventListener('mouseover', function() {
+                linkedinBtn.href = 'https://www.linkedin.com/in/benjamin-tousifar-44054a112/';
+    });
+});
+    </script>
     </body>
 </html>
 
