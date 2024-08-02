@@ -1,7 +1,24 @@
+@font-face {
+  font-family: '__Space_Grotesk_587f35';
+  src: url('path/to/space_grotesk.woff2') format('woff2'),
+       url('path/to/space_grotesk.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '__Space_Grotesk_Fallback_587f35';
+  src: url('path/to/space_grotesk_fallback.woff2') format('woff2'),
+       url('path/to/space_grotesk_fallback.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
 * { 
-  font-family: Georgia, 'Times New Roman', Times, serif
+  font-family: '__Space_Grotesk_587f35', '__Space_Grotesk_Fallback_587f35', sans-serif;
   
   /* margin: 0;
   padding: 0; */
@@ -9,7 +26,7 @@
 }
 
 :root {
-    font-size: 16px;
+    font-size: 13px;
     font-family: 'Open Sans';
     
 }
@@ -84,14 +101,22 @@ section {
   margin: 100px;
   margin-bottom: 30px;
   color: white;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
   /* left: 50px; */
 }
 
 .intro-text p {
-  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.6;
   background: none;
   color: white;
+  
 }
 
 
@@ -112,6 +137,9 @@ section {
 }
 
 .download-cv-btn {
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
   display: inline-block;
   padding: 10px 20px;
   margin-top: 20px;
@@ -125,6 +153,9 @@ section {
 }
 
 .contact-me-button {
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
   display: inline-block;
   padding: 10px 20px;
   margin-top: 20px;
@@ -207,7 +238,7 @@ section {
     /* right: 400px; */
     float: left;
     margin-left: 50px;
-    color: rgb(255, 255, 255);
+    color: rgb(218, 176, 176);
     appearance: none;
     background: none;
     outline: none;
@@ -222,7 +253,7 @@ section {
     height: 5px;
     content: '';
     display: block;
-    background-color: rgb(255, 255, 255);
+    background-color: #fde671;
     margin: 6px 0px;
     transition: 0.4s;
   }
@@ -272,6 +303,10 @@ section {
 
   .mobile-nav a {
     /* display: block; */
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     width: 80%;
     max-width: 200px;
     margin: 0 auto 16px;
@@ -835,5 +870,61 @@ header.projects {
 }
 
 
+#contact-me {
+  text-align: left;
+  padding-left: 400px;
+  
+  
+}
+
+h1.contact {
+  font-weight: 700px;
+  font-size: 5rem;
+  margin-bottom: 20px;
+  
+  /* padding-left: -50px; */
+  
+  /* background-color: #000000; */
+  /* text-align: left;
+  padding-left: 400px; */
+  
+  
+  
+}
+
+input {
+  width: 300px;
+  height: 35px;
+  border-radius: 7px;
+  margin: 20px auto;
+  border-width: 1px;
+  border-color:rgb(191, 196, 218)
+  
+}
+
+textarea {
+  border-radius: 7px;
+  width: 500px;
+  height: 150px;
+  border-width: 1px;
+  padding: 10px 5px;
+}
+
+#name {
+  margin: 0 auto 30px;
+}
+
+#email {
+  margin: 0 auto 30px;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #001d3d;
+  color: white;
+  
+}
 
 
