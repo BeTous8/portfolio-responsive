@@ -105,14 +105,14 @@ section {
 
 .intro-text {
   flex: 1;
-  padding-right: 10px;
-  margin-left: 200px;
+  padding-right: 0.625rem;
+  margin-left: 12.5rem;
 }
 
 .intro-text h1 {
-  font-size: 36px;
-  margin: 100px;
-  margin-bottom: 30px;
+  font-size: 2.25rem;
+  margin: 6.25rem;
+  margin-bottom: 1.875rem;
   color: white;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -138,15 +138,15 @@ section {
   display: flex;
   justify-content: center;
   /* padding-left: -1000px; */
-  margin-right: 200px;
+  margin-right: 12.5rem;
 }
 
 
 .intro-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 300px;
-  width: 300px;
+  border-radius: 22rem;
+  width: 22rem;
 }
 
 .download-cv-btn {
@@ -154,14 +154,14 @@ section {
   font-weight: 400;
   font-style: normal;
   display: inline-block;
-  padding: 10px 20px;
-  margin-top: 20px;
+  padding: 1rem 2rem;
+  margin-top: 1.25rem;
   color: #ffffff;
   background-color: #001d3d;
   border: none;
-  border-radius: 50px;
+  border-radius: 4rem;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.25rem;
   transition: background-color 0.3s ease;
 }
 
@@ -170,14 +170,14 @@ section {
   font-weight: 400;
   font-style: normal;
   display: inline-block;
-  padding: 10px 20px;
-  margin-top: 20px;
+  padding: 1rem 2rem;
+  margin-top: 1.25rem;
   color: #000000;
   background-color: #dcdbe6;
   border: none;
-  border-radius: 50px;
+  border-radius: 4rem;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.25rem;
   transition: background-color 0.3s ease;
 }
 
