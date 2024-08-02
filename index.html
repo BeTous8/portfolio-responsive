@@ -203,17 +203,14 @@
         <h1 class="contact">Contact Me</h1>
         <form id="myform">
             <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" placeholder="John Doe"><br>
+            <input type="text" id="name" name="name" placeholder="John Doe" required><br>
             <label for="email">Email</label><br>
-            <input type="text" id="email" name="email" placeholder="johndoe@gmail.com"><br>
+            <input type="text" id="email" name="email" placeholder="johndoe@gmail.com" required><br>
             <label for="message">Message</label><br>
             <textarea id="message" name="message" rows="5" cols="40" placeholder="Type your message here." required></textarea><br>
             <input type="submit" class="button" value="Submit">
             <!-- <button type="submit">Submit</button> -->
         </form>
-        <div id="toast-container" class="toast-container"></div>
-            Thank you! Your message has been sent successfully.
-        </div>
     </section>
     
     <main>
@@ -274,19 +271,42 @@
                 linkedinBtn.href = 'https://www.linkedin.com/in/benjamin-tousifar-44054a112/';
     });
 });
-    
-    function SendMail() {
-        var params = {
-            from_name : document.getElementById("name").value,
-            email_id : document.getElementById("email").value,
-            message : document.getElementById("message").value
-        }
-        emailjs.send("service_frml4hz", "template_u08tyzb", params).then(function (res) {
-            alert("Success! " + res.status);
-        })
+
+
+    function isValidEmail(email) {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
+}
+    function SendMail(event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        if (!isValidEmail(email)) {
+        alert("Please enter a valid email address.");
+        return;
     }
-    // const form = document.getElementById("myform");
-    document.addEventListener("submit", SendMail);
+
+
+        var params = {
+            from_name: name,
+            email_id: email,
+            message: message
+        };
+
+        emailjs.send("service_frml4hz", "template_u08tyzb", params).then(function (response) {
+            // console.log('SUCCESS!', response.status, response.text);
+            // document.getElementById("success-message").style.display = "block";
+            alert("Success! Your message has been sent.");
+            document.getElementById("myform").reset();
+        }, function(error) {
+            // console.log("FAILED...", error);
+            alert("Failed to send email. Please try again.");
+        });
+    }
+    // const form = document.querySelector("myform");
+    myform.addEventListener("submit", SendMail);
     </script>
     </body>
 </html>
