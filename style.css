@@ -235,6 +235,7 @@ section {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 
   
@@ -384,15 +385,19 @@ nav ul li:hover {
     list-style-type: none; */
   }
 
+  #resume {
+    background: #f3f3f5;
+  }
 
   .example_d {
-    color: #5c5b5b !important;
+    color: #5e5c5c !important;
     text-transform: uppercase;
     background: #ffffff;
     padding: 10px 0;
     border: 4px solid #494949 !important;
     border-radius: 6px;
     display:block;
+    text-align: left;
     /* transition: all 0.3s ease 0s; */
     }
 
@@ -556,8 +561,12 @@ nav ul li:hover {
   transition: 0.5s;
 } */
 
+#about {
+  background: #f3f3f5;
+}
+
 .heading-sec-title {
-  /* margin-top: 10rem; */
+  margin-top: 10rem;
   display: block;
   font-size: 3rem;
 }
@@ -675,7 +684,7 @@ nav ul li:hover {
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
-html.contact,
+/* html.contact,
 body.contact {
   width: 100%;
   height: 100%;;
@@ -685,6 +694,14 @@ body.contact {
   flex-direction: column;
   flex-wrap: wrap;
   font-family: 'Open Sans Condensed', sans-serif;
+} */
+
+.contact-info-heading {
+  background: #444;
+  margin: 5rem 38rem;
+  text-align: left;
+  font-weight: 800px;
+  font-size: 5rem;
 }
 
 div[class*=box] {
@@ -762,7 +779,7 @@ div[class*=box] {
   height: 100%;
   z-index: 1;
   transition: all 0.3s;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(71, 8, 8, 0.1);
 }
 .btn-one:hover::after {
   opacity: 0; 
@@ -819,7 +836,7 @@ div[class*=box] {
   height: 100%;
   z-index: 1;
   transition: all 0.3s;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(71, 8, 8, 0.1);
 }
 .btn-two:hover::after {
   opacity: 0; 
@@ -836,9 +853,13 @@ div[class*=box] {
   color: #FFF;
   transition: all 0.3s;
   position: relative;
+  background: #cfcccc;
+  width: 20rem;
+  padding-right: 5rem;
 }
 .btn-three span {
   transition: all 0.3s;
+  
 }
 .btn-three::before {
   content: 'Click Me!';
@@ -857,17 +878,21 @@ div[class*=box] {
   border-top-color: rgba(255,255,255,0.5);
   border-bottom-color: rgba(255,255,255,0.5);
   transform: scale(0.1, 1);
+
+  
 }
 .btn-three:hover span {
   opacity: 0;
+ 
 }
 .btn-three:hover::before {
   /* content: 'https://www.linkedin.com/in/benjamin-tousifar-44054a112/'; */
   opacity: 1; 
-  transform: scale(1, 1); 
+  transform: scale(1.2, 1.1); 
   width:max-content;
   position: absolute;
   cursor:grab;
+  
   
 }
 .btn-three::after {
@@ -875,20 +900,23 @@ div[class*=box] {
   position: relative;
   /* bottom: 0; */
   /* left: 0; */
-  width: 10px;
+  width: 30px;
   height: 100%;
   z-index: 1;
   transition: all 0.3s;
   background-color: rgba(255,255,255,0.1);
   opacity: 0;
   
+  
+  
+  
 }
 .btn-three:hover::after {
   /* content: 'https://www.linkedin.com/in/benjamin-tousifar-44054a112/'; */
   opacity: 0; 
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  /* left: 50%; */
+  /* top: 50%; */
+  /* transform: translate(-50%, -50%); */
 
 
   /* pointer-events:fill;
@@ -897,10 +925,13 @@ div[class*=box] {
 
 #linkedin-link {
   text-decoration: none;
+  width: 5rem;
 }
 
 .btn-three:hover .link-text {
   display: none;
+  width: 5rem;
+  
 }
 
 p, hr {
@@ -985,10 +1016,12 @@ header.projects {
 }
 
 
+
 #contact-me {
   text-align: left;
   padding-left: 400px;
-  width: 50rem;
+  width: 87.6rem;
+  /* background: #f3f3f5; */
   
   
 }
@@ -1110,9 +1143,25 @@ textarea {
 
 .main-footer-social-cont {
   margin-top: 1rem;
+  background: #000;
 }
 
 .main-footer-icon {
   width: 2.5rem;
   margin-right: 1.5rem;
+  background: white;
+  border-color: #000;
+  border-collapse: collapse;
+  border-radius: 90%;
+  
 }
+
+.footer-email-icon {
+  color: white;
+  font-size: 2.2rem;
+}
+
+
+
+
+
