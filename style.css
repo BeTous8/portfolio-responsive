@@ -389,6 +389,19 @@ nav ul li:hover {
     background: #f3f3f5;
   }
 
+  .info {
+    font-size: 1.3rem;
+  }
+
+  .titels {
+    margin-top: 4rem;
+    font-size: 1.7rem;
+  }
+
+  .skill-details {
+    text-align: left;
+  }
+
   .example_d {
     color: #5e5c5c !important;
     text-transform: uppercase;
@@ -988,8 +1001,13 @@ p, hr {
 .summary {
   text-align: left;
   font-size: large;
+  line-height: 2rem;
   /* background-color: rgba(252, 251, 236, 0.926); */
   
+}
+
+.position-details {
+  line-height: 2rem;
 }
 
 header.projects {
