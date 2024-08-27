@@ -30,6 +30,7 @@
 }
 
 * { 
+  /* outline: 2px solid red; */
   font-family: '__Space_Grotesk_587f35', '__Space_Grotesk_Fallback_587f35', sans-serif;
   
   /* margin: 0;
@@ -1090,19 +1091,23 @@ textarea {
   height: 3rem;
   cursor: pointer;
   background-color: #001d3d;
-  color: white;
-  margin: 2rem 0;
+  color: rgb(255, 255, 255);
+  margin: 2rem .5rem;
+  box-sizing: border-box;
+  display: inline-block;
+  
   
   
 }
 
 .button:hover {
   /* text-align: left; */
-  
-  width: 10rem;
-  background: #001d3d;
-  transition: .5s;
 
+}
+
+.button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px #001d3d;
 }
 
 .main-footer {
