@@ -30,30 +30,23 @@
 }
 
 * { 
-  /* outline: 2px solid red; */
   font-family: '__Space_Grotesk_587f35', '__Space_Grotesk_Fallback_587f35', sans-serif;
-  
-  /* margin: 0;
-  padding: 0; */
-  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root {
+/* :root {
     font-size: 13px;
     font-family: 'Open Sans';
     
-}
+} */
 
 
 body {
-    /* background:url(https://images.unsplash.com/photo-1604147706283-d7119b5b822c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center; */ */
-    /* background-size: cover; */
-    background-color: white;
+    /* background-color: white; */
     /* background-color: rgba(14, 13, 13, 0.742); */
-    height: 100%;
-    width: 100%;
-    overflow:scroll;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
@@ -62,7 +55,7 @@ body {
     text-align: center;
     color: rgb(9, 9, 9);
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; */
 }
 
 header {
@@ -82,16 +75,59 @@ section {
   
 }
 
-#home {
-  /* background-color: black; */
+.intro-page-container {
+  display: flex;
+  justify-content: center;
   background-image: url(https://wallpapercave.com/wp/wp6690963.jpg);
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
-.page {
+.intro-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  flex-direction: column;
+}
+
+.intro-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  /* width: 300px;
+  height: 300px; */
+}
+
+.intro-img img {
+  border-radius: 8rem;
+}
+
+.intro-item.intro-text {
+  align-items: center;
+  margin-right: 11rem;
+}
+
+/* .page {
   width: 100%;
   flex: 1 1 100%; /* Each item takes full width on small screens */
+
+/* .intro-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+.intro-text-heading,
+.intro-text-desc {
+  color: white;
+}
+
+.intro-text-heading {
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .Introduction {
