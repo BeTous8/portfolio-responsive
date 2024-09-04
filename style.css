@@ -123,13 +123,19 @@ section {
 .intro-text-heading,
 .intro-text-desc {
   color: white;
-  outline: 1px red solid;
-  width: 300px;
+  /* outline: 1px red solid; */
+  width: 250px;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .intro-text-heading {
   font-weight: 700;
   font-size: 2rem;
+}
+
+.intro-item.intro-contact {
+  margin-left: 3rem;
 }
 
 .Introduction {
