@@ -123,6 +123,8 @@ section {
 .intro-text-heading,
 .intro-text-desc {
   color: white;
+  outline: 1px red solid;
+  width: 300px;
 }
 
 .intro-text-heading {
