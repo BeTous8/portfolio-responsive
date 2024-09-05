@@ -1,5 +1,5 @@
+font-family: '__Space_Grotesk_587f35';
 @font-face {
-  font-family: '__Space_Grotesk_587f35';
   src: url('path/to/space_grotesk.woff2') format('woff2'),
        url('path/to/space_grotesk.woff') format('woff');
   font-weight: normal;
@@ -17,17 +17,6 @@
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
-@media (min-width: 600px) {
-  .page {
-    flex: 1 1 50%; /* Each item takes 50% width on medium screens */
-  }
-}
-
-@media (min-width: 900px) {
-  .page {
-    flex: 1 1 33.33%; /* Each item takes 33.33% width on large screens */
-  }
-}
 
 * { 
   font-family: '__Space_Grotesk_587f35', '__Space_Grotesk_Fallback_587f35', sans-serif;
@@ -36,43 +25,11 @@
   box-sizing: border-box;
 }
 
-/* :root {
-    font-size: 13px;
-    font-family: 'Open Sans';
-    
-} */
-
-
-body {
-    /* background-color: white; */
-    /* background-color: rgba(14, 13, 13, 0.742); */
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0; 
-    position: relative;
-    text-align: center;
-    color: rgb(9, 9, 9);
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth; */
-}
-
-header {
-  color: #836565;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  
-}
-
-section {
-  min-height: 100vh; /* Full viewport height */
-  padding: 20px 20px;
-  scroll-snap-align: start;
-  scroll-behavior: smooth;
-  
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
 }
 
 .intro-page-container {
@@ -137,6 +94,124 @@ section {
 .intro-item.intro-contact {
   margin-left: 3rem;
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .intro-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .intro-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .intro-item.intro-contact {
+    flex-direction: row;
+  }
+
+  .intro-img {
+    order: 1;
+    /* width: 500px; */
+    margin-right: 40rem;
+  }
+
+  .intro-img img {
+    width: 500px;
+    height: auto;
+    border-radius: 20rem;
+  }
+
+  .intro-item.intro-info {
+    margin-top: 15rem;
+  }
+
+  .intro-item.intro-text {
+    margin-left: 30rem;
+  }
+
+  .intro-text-heading {
+    font-size: 5rem;
+    width: 30rem;
+  }
+
+  .intro-text-desc {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    width: fit-content;
+  }
+
+  .intro-item.intro-contact {
+    align-self: flex-end;
+    margin-bottom: 10rem;
+    margin-right: 10rem;
+
+  }
+
+  .download-cv-btn,
+  .contact-me-button {
+    width: 12rem;
+    margin-right: 2rem;
+  }
+}
+
+
+
+/* :root {
+    font-size: 13px;
+    font-family: 'Open Sans';
+    
+} */
+
+
+body {
+    /* background-color: white; */
+    /* background-color: rgba(14, 13, 13, 0.742); */
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0; 
+    position: relative;
+    text-align: center;
+    color: rgb(9, 9, 9);
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth; */
+}
+
+header {
+  color: #836565;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  
+}
+
+section {
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px 20px;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+  
+}
+
+
 
 .Introduction {
   display: flex;
