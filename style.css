@@ -27,90 +27,73 @@ font-family: '__Space_Grotesk_587f35';
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-  .intro-page-container {
-    display: flex;
-    justify-content: center;
-    background-image: url(https://wallpapercave.com/wp/wp6690963.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .intro-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width: 900px; */
-    flex-direction: column;
-  }
-  
-  .intro-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-    padding: 1rem;
-    /* width: 300px;
-    height: 300px; */
-  }
-  
-  .intro-img img {
-    border-radius: 8rem;
-  }
-  
-  .intro-item.intro-text {
-    align-items: center;
-    margin-right: 11rem;
-  }
-  
-  /* .page {
-    width: 100%;
-    flex: 1 1 100%; /* Each item takes full width on small screens */
-  
-  /* .intro-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  } */
-  .intro-text-heading,
-  .intro-text-desc {
-    color: white;
-    /* outline: 1px red solid; */
-    width: 250px;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .intro-text-heading {
-    font-weight: 700;
-    font-size: 2rem;
-  }
-  
-  .intro-item.intro-contact {
-    margin-left: 3rem;
-  }
-  
-  
-  .resume-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .resume-page {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .resume-item {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  body {
+    background-color: #F09A9D; /* Red */
   }
 }
 
+.intro-page-container {
+  display: flex;
+  justify-content: center;
+  background-image: url(https://wallpapercave.com/wp/wp6690963.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+.intro-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  flex-direction: column;
+}
+
+.intro-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  /* width: 300px;
+  height: 300px; */
+}
+
+.intro-img img {
+  border-radius: 8rem;
+}
+
+.intro-item.intro-text {
+  align-items: center;
+  margin-right: 11rem;
+}
+
+/* .page {
+  width: 100%;
+  flex: 1 1 100%; /* Each item takes full width on small screens */
+
+/* .intro-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+.intro-text-heading,
+.intro-text-desc {
+  color: white;
+  /* outline: 1px red solid; */
+  width: 250px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.intro-text-heading {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.intro-item.intro-contact {
+  margin-left: 3rem;
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
@@ -138,45 +121,65 @@ font-family: '__Space_Grotesk_587f35';
     height: 100vh;
   }
 
-  .intro-item.intro-contact {
-    flex-direction: row;
-  }
+
 
   .intro-img {
     order: 1;
+    flex: 1 1 auto;
     /* width: 500px; */
-    margin-right: 40rem;
+    /* margin-right: 10rem;
+    margin-top: 10rem; */
+    /* outline: 1px red solid; */
+
   }
 
   .intro-img img {
-    width: 500px;
+    width: 400px;
     height: auto;
     border-radius: 20rem;
+    margin-left: 2rem;
+    flex: 2;
+    /* margin-left: 30rem; */
   }
 
   .intro-item.intro-info {
     margin-top: 15rem;
+    /* outline: 1px red solid; */
+    width: fit-content;
+    display: flex;
   }
+
+
 
   .intro-item.intro-text {
-    margin-left: 30rem;
+    display: flex;
+    margin-top: 4rem;
   }
 
+.intro-item.intro-text {}
+
   .intro-text-heading {
-    font-size: 5rem;
+    font-size: 4rem;
     width: 30rem;
   }
 
+.intro-text-heading {}
+
   .intro-text-desc {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-top: 1rem;
     width: fit-content;
+  }
+
+  .intro-item .intro-contact {
+    flex-direction: row;
   }
 
   .intro-item.intro-contact {
     align-self: flex-end;
     margin-bottom: 10rem;
     margin-right: 10rem;
+    /* outline: 1px red solid; */
 
   }
 
@@ -184,6 +187,7 @@ font-family: '__Space_Grotesk_587f35';
   .contact-me-button {
     width: 12rem;
     margin-right: 2rem;
+    text-align: center;
   }
 }
 
@@ -367,7 +371,25 @@ section {
    
     
   /* }  */
-  
+
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+
+
+
+
+
 .menu {
   list-style-type: none;
   margin: 0;
@@ -532,8 +554,16 @@ nav ul li:hover {
 
   .titels {
     margin-top: 4rem;
-    font-size: 1.7rem;
+    font-size: 1rem;
   }
+
+h2.titels {}
+
+h2.titels {
+    text-align: center;
+}
+
+h2.titels {}
 
   .skill-details {
     text-align: left;
@@ -640,6 +670,10 @@ nav ul li:hover {
 
   .fn {
     margin-top: 10rem;
+  }
+
+.example_d.home {
+    background-color: greenyellow;
   }
 
 .fa-hand-holding-usd {
@@ -1107,13 +1141,26 @@ p, hr {
   display:inline;
 } */
 
-.education span {
-  display: inline;
-  margin-right: 30px;
-  margin-left: 50px;
-  font-size: large;
-  /* background-color: rgba(252, 251, 236, 0.926); */
-  font-weight: bold;
+
+
+.topic {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  outline: 1px red solid;
+  /* font-weight: bold; */
+}
+
+.duration {
+  margin-left: 2rem;
+}
+
+.topic {}
+
+.year {
+  /* margin-left: 2rem; */
 }
 
 .date {
@@ -1141,6 +1188,11 @@ p, hr {
   line-height: 2rem;
   /* background-color: rgba(252, 251, 236, 0.926); */
   
+}
+
+p.summary {
+  width: 21rem;
+  margin-left: 2rem;
 }
 
 .position-details {
