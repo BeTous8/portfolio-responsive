@@ -179,6 +179,14 @@ font-family: '__Space_Grotesk_587f35';
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+  .intro-page-container {
+    display: flex;
+    justify-content: center;
+    background-image: url(https://wallpapercave.com/wp/wp6690963.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
   .intro-page {
     display: flex;
     justify-content: center;
