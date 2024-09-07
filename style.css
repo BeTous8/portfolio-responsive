@@ -28,7 +28,23 @@ font-family: '__Space_Grotesk_587f35';
 
 
 /* Mobile Styles */
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 440px) {
+  section {
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px 20px;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+    
+  }
+  
+  header {
+    color: #836565;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    
+  }
   .intro-page-container {
     display: flex;
     justify-content: center;
