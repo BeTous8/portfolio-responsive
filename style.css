@@ -26,81 +26,6 @@ font-family: '__Space_Grotesk_587f35';
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {
-  body {
-    background-color: #F09A9D; /* Red */
-  }
-}
-
-.intro-page-container {
-  display: flex;
-  justify-content: center;
-  background-image: url(https://wallpapercave.com/wp/wp6690963.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.intro-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 900px;
-  flex-direction: column;
-}
-
-.intro-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem;
-  padding: 1rem;
-  /* width: 300px;
-  height: 300px; */
-}
-
-.intro-img img {
-  border-radius: 8rem;
-}
-
-.intro-item.intro-text {
-  align-items: center;
-  margin-right: 11rem;
-}
-
-/* .page {
-  width: 100%;
-  flex: 1 1 100%; /* Each item takes full width on small screens */
-
-/* .intro-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
-.intro-text-heading,
-.intro-text-desc {
-  color: white;
-  /* outline: 1px red solid; */
-  width: 250px;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.intro-text-heading {
-  font-weight: 700;
-  font-size: 2rem;
-}
-
-.intro-item.intro-contact {
-  margin-left: 3rem;
-}
-
-/* Mobile Styles */
-<<<<<<< HEAD
-@media only screen and (max-width: 400px) {
-  body {
-    background-color: #F09A9D; /* Red */
-=======
 @media only screen and (max-width: 430px) {
   .intro-page-container {
     display: flex;
@@ -125,7 +50,7 @@ font-family: '__Space_Grotesk_587f35';
     margin: 1rem;
     padding: 1rem;
     /* width: 300px;
-    height: 300px; */
+    height: 100mv; */
   }
   
   .intro-img img {
@@ -163,12 +88,85 @@ font-family: '__Space_Grotesk_587f35';
   
   .intro-item.intro-contact {
     margin-left: 3rem;
->>>>>>> parent of b420293 (Mobile version in progress)
+  }
+
+  .resume-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .resume-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    margin: 1rem;
+    padding: .5rem;
+    /* outline: 1px blue solid; */
+  }
+  
+  .resume-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* .resume-page .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+  
+  .topic {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    outline: 1px red solid;
+    /* font-weight: bold; */
+    margin-bottom: .5rem;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  
+  .topic-work {
+    display: flex;
+    font-weight: 700;
+    margin: 1rem 0rem .5rem
+  }
+  
+  .desc {
+    font-size: 1rem;
+  }
+  
+  .desc-1 {
+    font-size: 1rem;
+    margin-bottom: .7rem;
+  }
+  
+  .work-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    width: 22rem;
+    outline: 1px red solid;
+  }
+  
+  .work-time .place {
+    flex: 3;
+  }
+  
+  .work-time .time {
+    /* margin-left: 6rem; */
+    flex: 1;
   }
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 431px) and (max-width: 960px) {
   .intro-page {
     display: flex;
     justify-content: center;
