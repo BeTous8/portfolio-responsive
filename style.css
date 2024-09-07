@@ -91,6 +91,80 @@ font-family: '__Space_Grotesk_587f35';
   .intro-item.intro-contact {
     margin-left: 3rem;
   }
+
+  .resume-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .resume-page {
+    display: flex;
+    flex-direction: column;
+    height: 250vh;
+    align-items: center;
+    margin: 1rem;
+    padding: .5rem;
+    outline: 1px blue solid;
+  }
+  
+  .resume-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* .resume-page .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+  
+  .topic {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    outline: 1px red solid;
+    /* font-weight: bold; */
+    margin-bottom: .5rem;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  
+  .topic-work {
+    display: flex;
+    font-weight: 700;
+    margin: 1rem 0rem .5rem
+  }
+  
+  .desc {
+    font-size: 1rem;
+  }
+  
+  .desc-1 {
+    font-size: 1rem;
+    margin-bottom: .7rem;
+  }
+  
+  .work-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    width: 22rem;
+    outline: 1px red solid;
+  }
+  
+  .work-time .place {
+    flex: 3;
+  }
+  
+  .work-time .time {
+    /* margin-left: 6rem; */
+    flex: 1;
+  }
 }
 
 /* Tablet Styles */
@@ -192,9 +266,9 @@ font-family: '__Space_Grotesk_587f35';
 
 
 body {
-    /* background-color: white; */
-    /* background-color: rgba(14, 13, 13, 0.742); */
-    /* display: flex;
+    /* background-color: white;
+    background-color: rgba(14, 13, 13, 0.742);
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
@@ -311,68 +385,6 @@ section {
   text-decoration: none;
   font-size: 1.25rem;
   transition: background-color 0.3s ease;
-}
-
-/* .download-cv-btn:hover {
-  background-color: #ffffff;
-  color: #000000;
-} */
-/* 
-/* nav {
-  background:url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center;  */
-  /* height: 100%;
-  width: 300px;
-  position: fixed;
-  z-index: 10;
-  display: block;
-  transform: translateX(0px);
-  transition: transform 0.3s ease-in-out; */
-  
-
-/* } */
- 
-
-/* #nav-list.show {
-  transform: translateX(300);
-} */
-
-/* nav ul {
-    
-    list-style: none;
-    margin: 0 auto; 
-    padding: 40px 50px;
-    color: rgb(19, 21, 22);
-    display: block;
-    float: left;
-    height: 100%;
-    width: 100%;
-    
-  } */
-
-/* nav ul li {
-    color: #ad0f0f;
-    display: block; 
-    height: 20px;
-    width: 170px;
-    line-height: 15px; 
-    list-style:armenian;
-    padding: 30px 0;
-    transition: background .5s;
-    /* margin-left: auto; */
-   
-    
-  /* }  */
-
-
-.resume-container {
-  display: flex;
-  justify-content: center;
-}
-
-.resume-page {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
 }
 
 
@@ -1134,21 +1146,13 @@ p, hr {
 
 
 
-.topic {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  font-size: 1rem;
-  outline: 1px red solid;
-  /* font-weight: bold; */
-}
+
 
 .duration {
   margin-left: 2rem;
 }
 
-.topic {}
+
 
 .year {
   /* margin-left: 2rem; */
