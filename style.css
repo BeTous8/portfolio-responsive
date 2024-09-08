@@ -23,6 +23,7 @@ font-family: '__Space_Grotesk_587f35';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 
 /* Mobile Styles */
@@ -30,64 +31,70 @@ font-family: '__Space_Grotesk_587f35';
   .intro-page-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-image: url(https://wallpapercave.com/wp/wp6690963.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
   }
   
   .intro-page {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 900px;
-    flex-direction: column;
+    width: 100%;
+    
   }
   
-  .intro-item {
+  .intro-page .intro-item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 1rem;
-    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    /* margin: 1rem; */
+    /* padding: 1rem; */
     /* width: 300px;
     height: 100mv; */
   }
   
-  .intro-img img {
+  .intro-page .intro-img img {
     border-radius: 8rem;
+    outline: 1px red solid;
+  }
+
+  .intro-page .intro-img {
+    outline: 1px red solid;
   }
   
-  .intro-item.intro-text {
-    align-items: center;
-    margin-right: 11rem;
-  }
+
   
-  /* .page {
-    width: 100%;
-    flex: 1 1 100%; /* Each item takes full width on small screens */
-  
-  /* .intro-text {
+  .intro-page .intro-text {
+    color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-  } */
-  .intro-text-heading,
-  .intro-text-desc {
-    color: white;
-    /* outline: 1px red solid; */
-    width: 250px;
+    outline: 1px red solid;
     text-align: center;
-    margin-bottom: 1rem;
+    width: 100%;
   }
-  
-  .intro-text-heading {
-    font-weight: 700;
+
+  .intro-text .intro-text-heading {
     font-size: 2rem;
+    font-weight: 700;
   }
   
-  .intro-item.intro-contact {
-    margin-left: 3rem;
+  .intro-text .intro-text-desc {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  
+  .intro-page .intro-contact {
+    outline: 1px red solid;
   }
 
   .resume-container {
@@ -125,7 +132,6 @@ font-family: '__Space_Grotesk_587f35';
     margin-left: 1rem;
     font-size: 1rem;
     outline: 1px red solid;
-    /* font-weight: bold; */
     margin-bottom: .5rem;
     font-weight: 700;
     text-decoration: underline;
@@ -163,6 +169,10 @@ font-family: '__Space_Grotesk_587f35';
     /* margin-left: 6rem; */
     flex: 1;
   }
+
+  .school-date .place {
+
+  }
 }
 
 /* Tablet Styles */
@@ -187,9 +197,15 @@ font-family: '__Space_Grotesk_587f35';
   
   .intro-page {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: flex-start;
+    flex-direction: column;
     height: 100vh;
+  }
+
+  .intro-page .intro-item {
+    justify-content: center;
+    align-items: center;
+
   }
 
 
@@ -213,12 +229,12 @@ font-family: '__Space_Grotesk_587f35';
     /* margin-left: 30rem; */
   }
 
-  .intro-item.intro-info {
+  /* .intro-item.intro-info {
     margin-top: 15rem;
-    /* outline: 1px red solid; */
+    outline: 1px red solid;
     width: fit-content;
     display: flex;
-  }
+  } */
 
 
 
@@ -227,14 +243,17 @@ font-family: '__Space_Grotesk_587f35';
     margin-top: 4rem;
   }
 
-.intro-item.intro-text {}
+.intro-page .intro-text {
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
 
   .intro-text-heading {
-    font-size: 4rem;
+    font-size: 4rem; 
     width: 30rem;
   }
 
-.intro-text-heading {}
 
   .intro-text-desc {
     font-size: 1.8rem;
@@ -452,7 +471,7 @@ section {
 .resume-page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 101vh;
 }
 
 
