@@ -36,6 +36,7 @@ font-family: '__Space_Grotesk_587f35';
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    overflow: hidden;
   }
   
   .intro-page {
