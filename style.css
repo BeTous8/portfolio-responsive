@@ -27,7 +27,7 @@ font-family: '__Space_Grotesk_587f35';
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 630px) {
   .intro-page-container {
     display: flex;
     justify-content: center;
@@ -178,7 +178,7 @@ font-family: '__Space_Grotesk_587f35';
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 431px) and (max-width: 960px) {
+@media only screen and (min-width: 631px) and (max-width: 960px) {
   .intro-page {
     display: flex;
     justify-content: center;
