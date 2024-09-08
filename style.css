@@ -27,7 +27,7 @@ font-family: '__Space_Grotesk_587f35';
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: 430px) {
   .intro-page-container {
     display: flex;
     justify-content: center;
@@ -45,6 +45,7 @@ font-family: '__Space_Grotesk_587f35';
     justify-content: center;
     align-items: center;
     width: 100%;
+    
     
   }
   
@@ -178,12 +179,62 @@ font-family: '__Space_Grotesk_587f35';
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 931px) and (max-width: 960px) {
-  .intro-page {
+@media only screen and (min-width: 431px) and (max-width: 960px) {
+  .intro-page-container {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    align-items: center;
+    background-image: url(https://wallpapercave.com/wp/wp6690963.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
+    /* overflow: hidden; */
+  }
+  .intro-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* margin: 3rem; */
+    
+    
+  }
+
+  .intro-page .intro-img img {
+    border-radius: 8rem;
+    /* outline: 1px red solid; */
+  }
+
+  .intro-page .intro-img {
+    /* outline: 1px red solid; */
+    order: 1;
+  }
+
+  .intro-page .intro-text {
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* outline: 1px red solid; */
+    text-align: center;
+    /* width: 100%; */
+  }
+
+  .intro-text .intro-text-heading {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .intro-text .intro-text-desc {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .intro-page .intro-contact {
+    /* outline: 1px red solid; */
+    align-self:flex-end;
   }
 }
 
