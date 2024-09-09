@@ -62,7 +62,7 @@ font-family: '__Space_Grotesk_587f35';
     /* padding: 1rem; */
     /* width: 300px;
     height: 100mv; */
-    flex: 1;
+    /* flex: 1 1 auto; */
   }
   
   .intro-page .intro-img img {
@@ -152,6 +152,12 @@ font-family: '__Space_Grotesk_587f35';
     margin-bottom: .5rem;
     font-weight: 700;
     text-decoration: underline;
+  }
+
+  .sub-topic {
+    font-weight: 700;
+    font-size: .8rem;
+    margin: 1rem 0 .5rem;
   }
   
   .topic-work {
@@ -614,7 +620,7 @@ section {
   /* }  */
 
 
-.resume-container {
+/* .resume-container {
   display: flex;
   justify-content: center;
 }
@@ -623,7 +629,7 @@ section {
   display: flex;
   flex-direction: column;
   height: 101vh;
-}
+} */
 
 
 
