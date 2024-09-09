@@ -52,7 +52,7 @@ font-family: '__Space_Grotesk_587f35';
   .intro-page .intro-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -60,11 +60,14 @@ font-family: '__Space_Grotesk_587f35';
     /* padding: 1rem; */
     /* width: 300px;
     height: 100mv; */
+    flex: 1;
   }
   
   .intro-page .intro-img img {
     border-radius: 8rem;
     /* outline: 1px red solid; */
+    
+
   }
 
   .intro-page .intro-img {
@@ -81,17 +84,21 @@ font-family: '__Space_Grotesk_587f35';
     flex-direction: column;
     /* outline: 1px red solid; */
     text-align: center;
-    width: 100%;
+    width: 85%;
+    /* outline: 1px solid red; */
   }
 
   .intro-text .intro-text-heading {
     font-size: 2rem;
     font-weight: 700;
+    /* outline: 1px solid red; */
   }
   
   .intro-text .intro-text-desc {
     font-size: 1.2rem;
     margin-top: 1rem;
+    width: 50%;
+    /* outline: 1px solid red; */
   }
 
   
