@@ -19,7 +19,7 @@ font-family: '__Space_Grotesk_587f35';
 
 
 * { 
-  font-family: '__Space_Grotesk_587f35', '__Space_Grotesk_Fallback_587f35', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -37,6 +37,7 @@ font-family: '__Space_Grotesk_587f35';
     background-repeat: no-repeat;
     height: 100vh;
     overflow: hidden;
+    flex-direction: column;
   }
   
   .intro-page {
@@ -45,6 +46,7 @@ font-family: '__Space_Grotesk_587f35';
     justify-content: center;
     align-items: center;
     width: 100%;
+    /* outline: 1px red solid; */
     
     
   }
@@ -77,27 +79,32 @@ font-family: '__Space_Grotesk_587f35';
 
   
   .intro-page .intro-text {
+    font-family: "Sniglet", system-ui;
     color: white;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     /* outline: 1px red solid; */
     text-align: center;
-    width: 85%;
+    /* width: fit-content; */
     /* outline: 1px solid red; */
   }
 
   .intro-text .intro-text-heading {
+    font-family: "Open Sans", sans-serif;
     font-size: 2rem;
     font-weight: 700;
+    text-align: center;
     /* outline: 1px solid red; */
   }
   
   .intro-text .intro-text-desc {
-    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
     margin-top: 1rem;
-    width: 50%;
+    text-align: center;
+    /* width: 50%; */
     /* outline: 1px solid red; */
   }
 
@@ -177,11 +184,95 @@ font-family: '__Space_Grotesk_587f35';
   
   .work-time .time {
     /* margin-left: 6rem; */
-    flex: 1;
+    flex: auto;
+    width: 3rem;
+    /* outline: 1px red solid; */
   }
 
   .school-date .place {
 
+  }
+
+  footer {
+    display: block;
+    width: 100%;
+    clear: both; /* Clears any floats */
+    margin-top: 20px; /* Adds space between the content and footer */
+  }
+  
+
+  .main-footer {
+    background: #000;
+    color: #FFF;
+    max-width: 100%;
+  }
+  
+  .main-container {
+    max-width: 120rem;
+    margin: auto;
+    width: 90%;
+  }
+  
+  .main-footer-upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 0;
+  }
+  
+  .heading-sm {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+  .main-footer-short-desc {
+    color: #dcdbe6;
+    margin-top: 2rem;
+    line-height: 1.7;
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 0;
+    
+  }
+  
+  .text-lt {
+    text-align: left;
+  }
+  
+  .main-footer-lower {
+    padding: 4rem 0;
+    border-top: 1px solid #444;
+    text-align: center;
+  }
+  
+  .footer-home-link {
+    color: #fce44a;
+  }
+  
+  .socila-lt {
+    order: 2;
+    text-align: left;
+  }
+  
+  .main-footer-social-cont {
+    margin-top: 1rem;
+    background: #000;
+  }
+  
+  .main-footer-icon {
+    width: 2.5rem;
+    margin-right: 1.5rem;
+    background: white;
+    border-color: #000;
+    border-collapse: collapse;
+    border-radius: 90%;
+    
+  }
+  
+  .footer-email-icon {
+    color: white;
+    font-size: 2.2rem;
   }
 }
 
@@ -394,32 +485,32 @@ section {
 }
 
 
-.intro-text {
+/* .intro-text {
   flex: 1;
   padding-right: 0.625rem;
   margin-left: 12.5rem;
-}
+} */
 
 .intro-text h1 {
-  font-size: 2.25rem;
+  /* font-size: 2.25rem;
   margin: 6.25rem;
   margin-bottom: 1.875rem;
   color: white;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
-  font-style: normal;
+  font-style: normal; */
   /* left: 50px; */
 }
 
 .intro-text p {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   line-height: 1.6;
   background: none;
-  color: white;
+  color: white; */
   
 }
 
@@ -825,6 +916,10 @@ h2.titels {}
 .example_d.home {
     background-color: greenyellow;
   }
+
+.example_d.resume {
+  background-color: greenyellow;
+}
 
 .fa-hand-holding-usd {
     padding: 1rem;
@@ -1276,16 +1371,16 @@ p, hr {
   
 }
 
-.work-time span {
+/* .work-time span {
   display:inline;
   margin-right: 250px;
   margin-left: 250px;
   font-size: 20px;
-}
+} */
 
-.time {
+/* .time {
   margin-inline-end: auto;
-}
+} */
 
 /* .work span {
   display:inline;
@@ -1295,9 +1390,9 @@ p, hr {
 
 
 
-.duration {
+/* .duration {
   margin-left: 2rem;
-}
+} */
 
 
 
